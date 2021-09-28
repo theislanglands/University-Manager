@@ -75,6 +75,7 @@ class CoursePage extends Page
     public function showIndex(Browser $browser)
     {
         $browser
+            ->assertPresent('.course')
             ->assertSeeIn('.course', 'Datamatisk Semantik')
             ->assertSeeIn('.course','DaSe-0101')
             ->assertSeeIn('.course', '15')

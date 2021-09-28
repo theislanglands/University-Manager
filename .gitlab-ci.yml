@@ -15,7 +15,7 @@ test:
   script:
     - php artisan test
     - php artisan dusk
-
+  timeout: 5m
   artifacts:
     paths:
       - ./storage/logs # for debugging
