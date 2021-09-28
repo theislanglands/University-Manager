@@ -44,13 +44,17 @@ _Hint: your JetBrains Student subscription comes bundled with __DataGrip__, whic
 
 ### Testing your solution
 
-Every time you push your code to our source control (gitlab.sdu.dk) (which you will have to do to pass), your code will be validated to see if it meets the requirements of this assignment. This can be slow, especially if other people are also doing it simultaneously (then you will most likely be put in a queue). To mitigate this, you can run your tests locally.
+Every time you push your code to our source control (gitlab.sdu.dk) (which you will have to do to pass), your code will be validated to see if it meets the requirements of this assignment. This can be slow, especially if other people are also doing it simultaneously (then you will most likely be put in a queue). To mitigate this, you can run your tests locally. 
 
+#### Route helper tests
+
+We've created some tests to verify that you have created the correct routes and bound them correctly. This is __not__ a requirement to pass, but it can help if you are having trouble. Simply run: `php artisan test` and it wil tell you if you are missing a route or if it's not connected correctly.
 You should test your application locally by running: `php artisan test`, which will give you an error if there is a route missing or if a route isn't bound to the expected controller.
 
-Additionally, you should run our browser tests using Laravel Dusk - this is a bit more tricky.
 
 #### Running browser tests
+
+You should run our browser tests using Laravel Dusk.
 
 The first time you run the tests on your machine, you will have to install the latest `Chrome` binaries; this can be done with the `php artisan dusk:chrome-driver` command (make sure you have the latest version of chrome).
 
