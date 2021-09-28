@@ -13,7 +13,6 @@ before_script:
 
 test:
   script:
-    - php artisan test
     - php artisan dusk
   timeout: 5m
   artifacts:
