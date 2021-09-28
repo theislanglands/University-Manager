@@ -1,0 +1,9 @@
+version: "3.8"
+services:
+    webtech-database:
+        image: mysql:5.7
+        environment:
+            MYSQL_DATABASE: webtech
+            MYSQL_ROOT_PASSWORD: secret
+        ports:
+            - "3306:3306"
