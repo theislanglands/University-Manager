@@ -49,7 +49,6 @@ Every time you push your code to our source control (gitlab.sdu.dk) (which you w
 #### Route helper tests
 
 We've created some tests to verify that you have created the correct routes and bound them correctly. This is __not__ a requirement to pass, but it can help if you are having trouble. Simply run: `php artisan test` and it wil tell you if you are missing a route or if it's not connected correctly.
-You should test your application locally by running: `php artisan test`, which will give you an error if there is a route missing or if a route isn't bound to the expected controller.
 
 
 #### Running browser tests
