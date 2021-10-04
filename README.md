@@ -21,15 +21,23 @@ For our first iteration of itslearning, you will develop a system where a user c
 
 
 ### The database
-The project requires a connection to a database. Luckily, thanks to docker, this is extremely simple and platform agnostic. To spin up a MySQL server, simply run the `docker-compose up -d` within the directory. This will pull a MySQL server container, port-forward it to port 3306 on your machine, and start it in detached mode.
+The project requires a connection to a database. Luckily, thanks to docker, this is extremely simple and platform agnostic. To spin up a MySQL server, simply run the `docker-compose up -d` within the directory. This will pull a MySQL server, port-forward it to port 3306 on your machine, and start it in detached mode. 
 
-You can verify that you can connect to the database by opening your database tool of choice and connecting to the server using the following settings:
+Additionally we have included an installation of _phpmyadmin_ that you can use to explore the database (this will start as part of the docker command), simply go to [http://localhost:8036](http://localhost:8036) and you should see something like this:
+
+![](https://codimd.s3.shivering-isles.com/demo/uploads/upload_167959c79a2bdfdf204221075b524b59.png)
+(if the database is empty, you have migrated it yet)
+
+You are of course still free to use whichever tool you prefer.
+
+The connection to the database is defined as follows:
 - host: `localhost`
 - port: `3306`
 - username: `root`
 - password: `secret`
+- database: `webtech`
 
-This should show an empty `webtech` database.
+If you followed the steps mentioned earlier and copied your `.env.example` to `.env`, then Laravel should already be configured with the correct connection details.
 
 _Hint: your JetBrains Student subscription comes bundled with __DataGrip__, which can be used to explore your database._
 
