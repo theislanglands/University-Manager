@@ -26,7 +26,7 @@ The project requires a connection to a database. Luckily, thanks to docker, this
 Additionally we have included an installation of _phpmyadmin_ that you can use to explore the database (this will start as part of the docker command), simply go to [http://localhost:8036](http://localhost:8036) and you should see something like this:
 
 ![](https://codimd.s3.shivering-isles.com/demo/uploads/upload_167959c79a2bdfdf204221075b524b59.png)
-(if the database is empty, you have migrated it yet)
+(if the database is empty, you haven't migrated it yet)
 
 You are of course still free to use whichever tool you prefer.
 
