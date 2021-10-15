@@ -19,7 +19,7 @@ class CreateDepartmentsTable extends Migration
 
             $table->string('name')->unique();
             $table->string('code')->unique();
-            $table->text('description');
+            $table->string('description');
         });
     }
 

@@ -21,7 +21,7 @@ class CreateCoursesTable extends Migration
             $table->string('name')->unique();
             $table->string('code')->unique();
             $table->integer('ects');
-            $table->text('description');
+            $table->string('description');
 
             $table->foreign('department_id')->references('id')->on('departments')->onDelete('cascade');
 

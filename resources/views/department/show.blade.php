@@ -29,7 +29,7 @@
     </div>
 @endforeach
 
-<button class="edit" name="edit" id="edit" onclick="window.location='{{route('departments.edit', $department->id)}}'">Edit Department</button>
+<a class="edit" id="edit" href="{{route('departments.edit', $department->id)}}">Edit Department</a>
 
 
 
@@ -37,7 +37,7 @@
 {{ method_field('delete') }}
 {{ csrf_field() }}
 </form>
-<button type="submit" class="delete" form="deleteDepartmentForm">Delete Department</button>
+<button type="submit" class="remove" form="deleteDepartmentForm">Delete Department</button>
 
 
 </body>

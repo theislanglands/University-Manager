@@ -16,12 +16,13 @@
 
     <div>
     <label for="name">Name</label><br>
-    <input type="text" name="name" id="name">
+    <input type="text" name="name" id="code">
     </div>
 
     <div>
     <label for="description">Description</label><br>
-    <textarea name="description" id="description"></textarea>
+
+    <input type="text" name="description" id="description">
     </div>
 
     <input type="submit" value="Create" id="submit" form="createDepartmentForm" class="submit">

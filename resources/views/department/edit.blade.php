@@ -25,13 +25,12 @@
 
     <div>
         <label for="description">Description</label><br>
-        <textarea name="description" id="description">{{ $department->description }}</textarea>
+        <input type="text" name="description" id="description" value="{{ $department->description }}">
     </div>
 
     <input type="submit" value="Save Changes" id="submit" form="editDepartmentForm" class="submit">
 
 </form>
-
 </body>
 </html>
 
