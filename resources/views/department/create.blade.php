@@ -16,7 +16,7 @@
 
     <div>
     <label for="name">Name</label><br>
-    <input type="text" name="name" id="code">
+    <input type="text" name="name" id="name">
     </div>
 
     <div>
