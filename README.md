@@ -8,7 +8,7 @@ To run the application
 
 1.  Run the `docker-compose up -d` within the directory to pull and start MySQL server on port 3306.
 2.  Run `php artisan migrate:fresh --seed` to seed the database.
-3   Run `php artisan serve` to boot up your application at localhost port 8000.
+3.  Run `php artisan serve` to boot up your application at localhost port 8000.
 
 
 ### Route overview
