@@ -4,12 +4,11 @@ This exersize, is the creation of a system for managing university departments a
 It's possible to view, create, update and delete departments and Courses related to them.
 
 ## Setup
-The project requires a connection to a database. run the `docker-compose up -d` within the directory. 
-This will pull a MySQL server, port-forward it to port 3306 on your machine, and start it in detached mode.
+To run the application
 
-Run the `docker-compose up -d` within the directory to pull and start MySQL server on port 3306
-Run `php artisan migrate:fresh --seed` to seed the database
-Run `php artisan serve` to boot up your application at localhost port 8000
+1.  Run the `docker-compose up -d` within the directory to pull and start MySQL server on port 3306.
+2.  Run `php artisan migrate:fresh --seed` to seed the database.
+3   Run `php artisan serve` to boot up your application at localhost port 8000.
 
 
 ### Route overview
