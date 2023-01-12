@@ -12,14 +12,13 @@
     <p class="success-message">{{session("success")}}</p>
 @endif
 
+
 @foreach($departments as $department)
 <div class="department">
     <p class="code">code of department: {{ $department->code }}</p>
     <p class="name">name of department: {{ $department->name }}</p>
     <p class="courses">no of courses: {{ count( $department->course ) }}</p>
     <a class="show" href="{{ route('departments.show', $department->id) }}">Show department</a>
-
-
 </div>
 <br>
 @endforeach
